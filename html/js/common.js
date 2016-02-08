@@ -65,7 +65,17 @@ $(document).ready(function() {
 
 	//Каруселька
 	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
-	$(".carousel").owlCarousel();
+	$(".carousel").owlCarousel({
+		items : 1,
+		itemsDesktop : [1199,1],
+		itemsDesktopSmall : [979,1],
+		itemsTablet : [768,1],
+		itemsMobile : [479,1],
+		autoPlay : true,
+		slideSpeed : 200,
+		paginationSpeed : 800,
+		itemsScaleUp : false
+	});
 
 	//Кнопка "Наверх"
 	//Документация:
