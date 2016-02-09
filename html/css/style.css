@@ -30,24 +30,22 @@ body {
 header {
 	background-color: #3d3c42;
 	color: #fff;
-	padding-top: 14px;
+	padding-top: 11px;
+	position: relative;
 }
 header .logo {
 	float: left;
-	width: 277px;
-	height: 74px;
-	margin: 2px 30px 17px 0;
+	width: 172px;
+	height: 47px;
+	margin: 0 18px 10px 0;
 	background-image: url(../img/logo-header.svg);
 	background-repeat: no-repeat;
 }
 header .panel {
-	float: left;
-}
-header .panel .info {
-	padding-bottom: 12px;
-	border-bottom: 1px solid #707070;
+	float: right;
 }
 header .panel .info .worktime {
+	display: none;
 	float: left;
 	font-size: 14px;
 	margin-top: 2px;
@@ -70,6 +68,7 @@ header .panel .info .worktime .text .time {
 	font-size: 13px;
 }
 header .panel .info .phone {
+	display: none;
 	float: left;
 	font-family: "SegoeUI", sans-serif;
 	font-size: 13px;
@@ -89,11 +88,9 @@ header .panel .info .basket {
 	float: right;
 	color: #fff;
 	padding: 6px 14px 4px 9px;
-	border: 1px solid #ed1c24;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
 	margin-top: 7px;
+	border-left: 1px solid #4b4a51;
+	border-right: 1px solid #4b4a51;
 }
 header .panel .info .basket:hover,
 header .panel .info .basket:active {
@@ -102,45 +99,70 @@ header .panel .info .basket:active {
 header .panel .info .basket .icon-basket {
 	float: left;
 	color: #ed1c24;
-	font-size: 18px;
+	font-size: 26px;
 	position: relative;
-	margin-right: 22px;
 }
 header .panel .info .basket .icon-basket .basket-items-qty {
-	min-width: 14px;
-	padding: 2px 3px 2px 2px;
+	min-width: 21px;
+	padding: 5px 3px 4px 3px;
 	text-align: center;
-	background-color: #e6e6e6;
-	-webkit-border-radius: 7px;
-	-moz-border-radius: 7px;
-	border-radius: 7px;
+	background-color: #fff;
+	-webkit-border-radius: 11px;
+	-moz-border-radius: 11px;
+	border-radius: 11px;
 	color: #3d3c42;
 	font-family: Arial, sans-serif;
-	font-size: 10px;
-	letter-spacing: -1px;
+	font-size: 12px;
 	position: absolute;
-	top: -3px;
-	left: 15px;
+	top: -6px;
+	left: 18px;
 }
 header .panel .info .basket .basket-title {
+	display: none;
 	float: left;
 	font-size: 12px;
 	line-height: 14px;
 }
-header .panel .nav {
+header .btn-mobile-menu {
+	display: block;
+	float: right;
+	color: #ed1c24;
+	margin: 14px 0;
+	padding-left: 15px;
+	cursor: pointer;
+}
+header .btn-mobile-menu .icon-mobile-menu {
+	font-size: 20px;
+	line-height: 1;
+}
+header .panel .header-nav {
+	display: none;
 	margin: 0;
-	padding: 0;
+	padding: 0 0 30px 0;
+	background-color: #3d3c42;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 101;
 }
-header .panel .nav > li {
-	float: left;
+header .panel .header-nav > li.btn-mobile-close {
+	font-size: 21px;
+	line-height: 1;
+	text-align: right;
+	cursor: pointer;
+	padding: 25px 18px 20px;
+}
+header .panel .header-nav > li {
 	list-style: none;
-	margin-right: 18px;
+	display: block;
+	text-align: center;
 }
-header .panel .nav > li:last-child {
+header .panel .header-nav > li:last-child {
 	margin-right: 0;
 }
-header .panel .nav > li > a {
-	display: block;
+header .panel .header-nav > li > a {
+	display: inline-block;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 15px;
@@ -149,8 +171,8 @@ header .panel .nav > li > a {
 	padding-bottom: 8px;
 	border-bottom: 3px solid #3d3c42;
 }
-header .panel .nav > li.active > a,
-header .panel .nav > li:hover > a {
+header .panel .header-nav > li.active > a,
+header .panel .header-nav > li:hover > a {
 	color: #ed1c24;
 	border-color: #ed1c24;
 }
@@ -158,6 +180,7 @@ header .panel .nav > li:hover > a {
 	position: relative;
 }
 .carousel__slide {
+	width: 100%;
 	height: 419px;
 	padding-top: 142px;
 	text-align: center;

@@ -111,4 +111,11 @@ $(document).ready(function() {
 		return false;
 	});
 
+	//show/hide mobile menu
+	$(".btn-mobile-menu").on("click", function() {
+		$(".header-nav").slideDown();
+	});
+	$(".btn-mobile-close").on("click", function() {
+		$(".header-nav").slideUp();
+	});
 });

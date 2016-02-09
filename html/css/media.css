@@ -35,22 +35,108 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+	.container {
+		width: auto;
+	}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.container {
+		width: auto;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.container {
+		width: auto;
+	}
 }
 
  /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.container {
 		width: 1010px;
+	}
+	header {
+		padding-top: 14px;
+	}
+	header .logo {
+		width: 277px;
+		height: 74px;
+		margin: 2px 30px 17px 0;
+	}
+	header .panel {
+		float: left;
+	}
+	header .panel .info {
+		padding-bottom: 12px;
+		border-bottom: 1px solid #707070;
+	}
+	header .panel .info .worktime {
+		display: block;
+	}
+	header .panel .info .phone {
+		display: block;
+	}
+	header .panel .info .basket {
+		color: #fff;
+		padding: 6px 14px 4px 9px;
+		border: 1px solid #ed1c24;
+		-webkit-border-radius: 30px;
+		-moz-border-radius: 30px;
+		border-radius: 30px;
+		margin-top: 7px;
+	}
+	header .panel .info .basket .icon-basket {
+		font-size: 18px;
+		margin-right: 22px;
+	}
+	header .panel .info .basket .icon-basket .basket-items-qty {
+		min-width: 14px;
+		padding: 2px 3px 2px 2px;
+		text-align: center;
+		background-color: #fff;
+		-webkit-border-radius: 7px;
+		-moz-border-radius: 7px;
+		border-radius: 7px;
+		color: #3d3c42;
+		font-family: Arial, sans-serif;
+		font-size: 10px;
+		letter-spacing: -1px;
+		position: absolute;
+		top: -3px;
+		left: 15px;
+	}
+	header .panel .info .basket .basket-title {
+		display: block;
+	}
+	header .panel .nav {
+		display: block;
+	}
+	header .btn-mobile-menu {
+		display: none;
+	}
+	header .panel .header-nav {
+		display: block;
+		margin: 0;
+		padding: 0;
+		background-color: transparent;
+		position: static;
+		width: auto;
+	}
+	header .panel .header-nav > li.btn-mobile-close {
+		display: none;
+	}
+	header .panel .header-nav > li {
+		float: left;
+		list-style: none;
+		margin-right: 18px;
+		text-align: left;
+	}
+	header .panel .header-nav > li > a {
+		display: block;
 	}
 }
