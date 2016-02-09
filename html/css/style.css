@@ -363,3 +363,78 @@ footer {
 	background-image: url(../img/footer-bg.png);
 	background-repeat: repeat;
 }
+.footer-row1 {
+	background-color: #3d3c42;
+	color: #fff;
+	line-height: 1;
+	height: 45px;
+	padding-top: 13px;
+}
+.footer-nav {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.footer-nav > li {
+	list-style: none;
+	float: left;
+	margin-right: 34px;
+}
+.footer-nav > li:last-child {
+	margin-right: 0;
+}
+.footer-nav > li > a {
+	color: #fff;
+	text-transform: uppercase;
+	line-height: 1;
+	padding: 11px 0 11px;
+}
+.footer-nav > li > a:hover,
+.footer-nav > li.active > a {
+	border-bottom: 3px solid #ed1c24;
+	color: #ed1c24;
+}
+.copy {
+	float: right;
+}
+.footer-row2 {
+	padding: 22px 0 20px 0;
+}
+.footer-contacts {
+	float: left;
+	color: #373d44;
+	font-size: 16px;
+	line-height: 22px;
+}
+.footer-contacts > span {
+	color: #f03e45;
+}
+.footer-social {
+	float: right;
+}
+.footer-social {
+	margin: 20px 184px 0 0;
+	padding: 0;
+}
+.footer-social > li {
+	list-style: none;
+	float: left;
+	margin-right: 22px;
+}
+.footer-social > li:last-child {
+	margin-right: 0;
+}
+.footer-social > li > a {}
+.footer-social > li > a > .icon {
+	font-size: 22px;
+	color: #f03e45;
+}
+.footer-logo {
+	float: right;
+	width: 196px;
+	height: 53px;
+	background-image: url(../img/logo-footer.svg);
+	background-repeat: no-repeat;
+}
+
+
