@@ -138,20 +138,12 @@ header .btn-mobile-menu .icon-mobile-menu {
 header .panel .header-nav {
 	display: none;
 	margin: 0;
-	padding: 0 0 30px 0;
+	padding: 19px 0 22px 0;
 	background-color: #3d3c42;
 	position: absolute;
-	top: 0px;
 	left: 0px;
 	width: 100%;
 	z-index: 101;
-}
-header .panel .header-nav > li.btn-mobile-close {
-	font-size: 21px;
-	line-height: 1;
-	text-align: right;
-	cursor: pointer;
-	padding: 25px 18px 20px;
 }
 header .panel .header-nav > li {
 	list-style: none;
