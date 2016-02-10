@@ -157,6 +157,9 @@
 		height: 419px;
 		padding-top: 142px;
 	}
+	.benefit__container {
+		padding-top: 41px;
+	}
 	.benefit__items {
 		float: left;
 		width: 1032px;
@@ -165,6 +168,7 @@
 	}
 	.benefit__items__item {
 		float: left;
+		padding: 0 26px 25px;
 	}
 	.categories__items {
 		float: left;
@@ -175,6 +179,9 @@
 	.categories__item {
 		float: left;
 	}
+	.new-products__title {
+		margin: 15px 0;
+	}
 	.new-products__items {
 		float: left;
 		width: 1032px;
@@ -183,6 +190,10 @@
 	}
 	.new-products__item {
 		float: left;
+		padding: 0 26px 62px;
+	}
+	.banners-bottom {
+		margin-top: 0;
 	}
 	.banners-bottom__banner {
 		float: left;

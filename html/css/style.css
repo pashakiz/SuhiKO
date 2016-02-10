@@ -224,13 +224,13 @@ header .panel .header-nav > li:hover > a {
 }
 .benefit {}
 .benefit__container {
-	padding-top: 41px;
+	padding-top: 19px;
 }
 .benefit__items__item {
 	display: block;
 	margin: 0 auto;
 	width: 258px; /*26+206+26*/
-	padding: 0 26px 19px;
+	padding: 22px 26px 25px;
 	text-align: center;
 }
 .benefit__items__item__icon {
@@ -277,7 +277,7 @@ header .panel .header-nav > li:hover > a {
 .new-products {}
 .new-products__title {
 	display: inline-block;
-	margin: 15px 0;
+	margin: 31px 0;
 	padding: 10px 25px;
 	text-transform: uppercase;
 	color: #fff;
@@ -289,7 +289,7 @@ header .panel .header-nav > li:hover > a {
 	display: block;
 	margin: 0 auto;
 	width: 258px; /*26+206+26*/
-	padding: 0 26px 62px;
+	padding: 0 26px 42px;
 	text-align: center;
 }
 .new-products__item__a {
@@ -331,7 +331,9 @@ header .panel .header-nav > li:hover > a {
 	background-color: #ed1c24;
 	color: #fff;
 }
-.banners-bottom {}
+.banners-bottom {
+	margin-top: 20px;
+}
 .banners-bottom__banner {
 	display: block;
 	width: 100%;
