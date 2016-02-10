@@ -29,39 +29,39 @@ $(document).ready(function() {
 	//Parallax (Stellar)
 	//Документация: http://markdalgleish.com/projects/stellar.js/docs/
 	//<div class="image" data-stellar-background-ratio="0">...</div>
-	$.stellar({
-		horizontalScrolling: false,
-		verticalOffset: 0
-	});
+	// $.stellar({
+	// 	horizontalScrolling: false,
+	// 	verticalOffset: 0
+	// });
 	
 	//Попап менеджер FancyBox
 	//Документация: http://fancyapps.com/fancybox/
 	//<a class="fancybox" rel="group" href="big_image_1.jpg"><img src="small_image_1.jpg" alt="" /></a>
 	//<a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>
-	$(".fancybox").fancybox();
+	// $(".fancybox").fancybox();
 
 	//Навигация по Landing Page
 	//$(".top_mnu") - это верхняя панель со ссылками.
 	//Ссылки вида <a href="#contacts">Контакты</a>
-	$(".top_mnu").navigation();
+	// $(".top_mnu").navigation();
 
 	//Добавляет классы дочерним блокам .block для анимации
 	//Документация: http://imakewebthings.com/jquery-waypoints/
-	$(".block").waypoint(function(direction) {
-		if (direction === "down") {
-			$(".class").addClass("active");
-		} else if (direction === "up") {
-			$(".class").removeClass("deactive");
-		};
-	}, {offset: 100});
+	// $(".block").waypoint(function(direction) {
+	// 	if (direction === "down") {
+	// 		$(".class").addClass("active");
+	// 	} else if (direction === "up") {
+	// 		$(".class").removeClass("deactive");
+	// 	};
+	// }, {offset: 100});
 
 	//Плавный скролл до блока .div по клику на .scroll
 	//Документация: https://github.com/flesler/jquery.scrollTo
-	$("a.scroll").click(function() {
-		$.scrollTo($(".div"), 800, {
-			offset: -90
-		});
-	});
+	// $("a.scroll").click(function() {
+	// 	$.scrollTo($(".div"), 800, {
+	// 		offset: -90
+	// 	});
+	// });
 
 	//Каруселька
 	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
@@ -81,12 +81,12 @@ $(document).ready(function() {
 	//Документация:
 	//http://api.jquery.com/scrolltop/
 	//http://api.jquery.com/animate/
-	$("#top").click(function () {
-		$("body, html").animate({
-			scrollTop: 0
-		}, 800);
-		return false;
-	});
+	// $("#top").click(function () {
+	// 	$("body, html").animate({
+	// 		scrollTop: 0
+	// 	}, 800);
+	// 	return false;
+	// });
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
