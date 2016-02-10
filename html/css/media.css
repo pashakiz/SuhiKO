@@ -202,6 +202,11 @@
 	.banner__text {
 		margin: 0 46px 0;
 	}
+	/* -------------------------- category (begin) -------------------------- */
+	.category__item {
+		float: left;
+	}
+	/* -------------------------- category (end) -------------------------- */
 	.footer-row1 {
 		height: 45px;
 	}
