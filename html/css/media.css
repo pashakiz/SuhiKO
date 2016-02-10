@@ -38,6 +38,20 @@
 	.container {
 		width: auto;
 	}
+	.carousel__text {
+		width: auto;
+		padding: 17px 37px 26px;
+	}
+	.carousel__text__title {
+		font-size: 32px;
+		margin-bottom: 14px;
+	}
+	.carousel__text__descr {
+		font-size: 20px;
+	}
+	.carousel .owl-controls .owl-dots {
+		bottom: 25px;
+	}
 
 }
 
@@ -137,6 +151,85 @@
 		text-align: left;
 	}
 	header .panel .header-nav > li > a {
+		display: block;
+	}
+	.carousel__slide {
+		height: 419px;
+		padding-top: 142px;
+	}
+	.benefit__items {
+		float: left;
+		width: 1032px;
+		position: relative;
+		left: -26px;
+	}
+	.benefit__items__item {
+		float: left;
+	}
+	.categories__items {
+		float: left;
+		width: 1032px;
+		position: relative;
+		left: -26px;
+	}
+	.categories__item {
+		float: left;
+	}
+	.new-products__items {
+		float: left;
+		width: 1032px;
+		position: relative;
+		left: -26px;
+	}
+	.new-products__item {
+		float: left;
+	}
+	.banners-bottom__banner {
+		float: left;
+		width: 50%;
+	}
+	.banner__text {
+		margin: 0 46px 0;
+	}
+	.footer-row1 {
+		height: 45px;
+	}
+	.footer-nav {
+		float: left;
+		padding: 0;
+	}
+	.footer-nav > li {
+		float: left;
+		margin-right: 34px;
+	}
+	.footer-nav > li:last-child {
+		margin-right: 0;
+	}
+	.footer-nav > li > a {
+		display: block;
+		padding: 14px 0 15px;
+	}
+	.footer-nav > li > a:hover,
+	.footer-nav > li.active > a {
+		padding-bottom: 12px;
+	}
+	.copy {
+		color: #fff;
+		position: static;
+		float: right;
+		padding-top: 14px;
+	}
+	.footer-row2 {
+		padding: 22px 0 20px 0;
+	}
+	.footer-contacts {
+		float: left;
+	}
+	.footer-social {
+		float: right;
+		margin: 20px 184px 0 0;
+	}
+	.footer-logo {
 		display: block;
 	}
 }
