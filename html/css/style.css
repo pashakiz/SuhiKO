@@ -511,27 +511,10 @@ header .panel .header-nav > li:hover > a {
 .category__item__more__ingredient__img {
 	width: 62px;
 	height: 48px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
 }
-.category__item__more__ingredient__img.salmon {
-	background-image: url(../img/ingredients/salmon.png);
-}
-.category__item__more__ingredient__img.cucumber {
-	background-image: url(../img/ingredients/cucumber.png);
-}
-.category__item__more__ingredient__img.rice {
-	background-image: url(../img/ingredients/rice.png);
-}
-.category__item__more__ingredient__img.cream-cheese {
-	background-image: url(../img/ingredients/cream-cheese.png);
-}
-.category__item__more__ingredient__img.tomato {
-	background-image: url(../img/ingredients/tomato.png);
-}
-.category__item__more__ingredient__img.pepper-bulgarian {
-	background-image: url(../img/ingredients/pepper-bulgarian.png);
+.category__item__more__ingredient__img img {
+	width: 100%;
+	height: auto;
 }
 .category__item__more__ingredient__title {
 	color: #7e7e7e;
@@ -567,7 +550,15 @@ header .panel .header-nav > li:hover > a {
 }
 /* -------------------------- category (end) -------------------------- */
 /* -------------------------- product (begin) -------------------------- */
-
+.product {}
+.product__img {
+	width: 345px;
+	height: 309px;
+}
+.product__img img {
+	width: 100%;
+	height: auto;
+}
 /* -------------------------- product (end) -------------------------- */
 /* -------------------------- contacts (begin) -------------------------- */
 
