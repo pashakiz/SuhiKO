@@ -67,11 +67,20 @@ $(document).ready(function() {
 	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
 	$(".carousel").owlCarousel({
 		items : 1,
-		itemsDesktop : [1199,1],
-		itemsDesktopSmall : [979,1],
-		itemsTablet : [768,1],
-		itemsMobile : [479,1],
 		autoPlay : true,
+		slideSpeed : 200,
+		paginationSpeed : 800,
+		itemsScaleUp : false
+	});
+	$(".product__info__ingredients").owlCarousel({
+		items : 6,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		itemsTablet : [768,3],
+		itemsMobile : [479,3],
+		nav : true,
+		navText : ['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
+		autoPlay : false,
 		slideSpeed : 200,
 		paginationSpeed : 800,
 		itemsScaleUp : false
@@ -114,5 +123,16 @@ $(document).ready(function() {
 	//show/hide mobile menu
 	$(".btn-mobile-menu").on("click", function() {
 		$(".header-nav").slideToggle();
+	});
+
+	//plus qty items to bascket
+	$(".add2bascket-qty-plus").on("click", function() {
+		var n = $(".add2bascket-qty-input").val();
+		$(".add2bascket-qty-input").val(++n);
+	});
+	//minus qty items to bascket
+	$(".add2bascket-qty-minus").on("click", function() {
+		var n = $(".add2bascket-qty-input").val();
+		$(".add2bascket-qty-input").val(--n);
 	});
 });
