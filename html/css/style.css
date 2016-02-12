@@ -197,7 +197,7 @@ header .panel .header-nav > li:hover > a {
 }
 .carousel .owl-controls .owl-dots {
 	width: 100%;
-    text-align: center;
+	text-align: center;
 	position: absolute;
 	bottom: 19px;
 }
@@ -559,8 +559,8 @@ header .panel .header-nav > li:hover > a {
 	position: relative;
 }
 .product__img {
-	width: 346px;
-	height: 309px;
+	width: 282px;
+	height: 251px;
 	margin-top: 53px;
 }
 .product__img img {
@@ -583,7 +583,7 @@ header .panel .header-nav > li:hover > a {
 	width: 100%;
 }
 .product__info__ingredients {	/*carousel*/
-	padding: 16px 15px;
+	padding: 16px 0 40px 0;
 	position: relative;
 	width: 100%;
 }
@@ -609,7 +609,31 @@ header .panel .header-nav > li:hover > a {
 	margin-top: 10px;
 	overflow: hidden;
 }
+.product__info__ingredients .owl-controls .owl-dots {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 13px;
+}
+.product__info__ingredients .owl-controls .owl-dots .owl-dot {
+	display: inline-block;
+	line-height: 1;
+	width: 9px;
+	height: 9px;
+	background-color: #e7e7e6;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.product__info__ingredients .owl-controls .owl-dots .owl-dot:last-child {
+	margin-right: 0;
+}
+.product__info__ingredients .owl-controls .owl-dots .owl-dot.active {
+	background-color: #dfdfdf;
+}
 .product__info__ingredients .owl-controls .owl-nav {
+	display: none;
 	color: #cfcfcf;
 	font-size: 39px;
 	line-height: 1;

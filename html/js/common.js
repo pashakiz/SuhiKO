@@ -67,23 +67,30 @@ $(document).ready(function() {
 	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
 	$(".carousel").owlCarousel({
 		items : 1,
-		autoPlay : true,
-		slideSpeed : 200,
-		paginationSpeed : 800,
-		itemsScaleUp : false
+		autoPlay : true
 	});
 	$(".product__info__ingredients").owlCarousel({
 		items : 6,
-		itemsDesktop : [1199,3],
-		itemsDesktopSmall : [979,3],
-		itemsTablet : [768,3],
-		itemsMobile : [479,3],
 		nav : true,
 		navText : ['<i class="icon-arrow-left"></i>','<i class="icon-arrow-right"></i>'],
 		autoPlay : false,
-		slideSpeed : 200,
-		paginationSpeed : 800,
-		itemsScaleUp : false
+		responsive : {
+			0 : {
+				items : 3
+			},
+			480 : {
+				items : 4
+			},
+			768 : {
+				items : 6
+			},
+			992 : {
+				items : 8
+			},
+			1199 : {
+				items : 6
+			}
+		}
 	});
 
 	//Кнопка "Наверх"

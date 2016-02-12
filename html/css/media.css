@@ -221,13 +221,13 @@
 	.category__item {
 		float: left;
 	}
-	.category__item:hover {
+	.category__item.hover:hover {
 		border-color: #c7c7c7;
 		-webkit-box-shadow: 3px 3px 10px 0px rgba(195, 190, 195, 1);
 		-moz-box-shadow:    3px 3px 10px 0px rgba(195, 190, 195, 1);
 		box-shadow:         3px 3px 10px 0px rgba(195, 190, 195, 1);
 	}
-	.category__item:hover .category__item__more {
+	.category__item.hover:hover .category__item__more {
 		display: block;
 	}
 	/* -------------------------- category (end) -------------------------- */
@@ -251,6 +251,15 @@
 		margin-top: -5px;
 		border-top: none;
 		border-bottom: 1px solid #e9e9e9;
+	}
+	.product__info__ingredients {
+		padding: 16px 15px;
+	}
+	.product__info__ingredients .owl-controls .owl-nav {
+		display: block;
+	}
+	.product__info__ingredients .owl-controls .owl-dots .owl-dot {
+		display: none;
 	}
 	/* -------------------------- category (end) -------------------------- */
 	.footer-row1 {
