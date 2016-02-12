@@ -143,7 +143,7 @@ $(document).ready(function() {
 		$(".add2bascket-qty-input").val(--n);
 	});
 
-	//fixed блок filters-wrapper on scroll
+	//fixed menu on scroll
 	$(window).scroll(function () {
 		console.log($(this).scrollTop());
 		if ($(this).scrollTop() > 60) {
@@ -158,12 +158,4 @@ $(document).ready(function() {
 			}
 		}
 	});
-
-	function windowSize(){
-	    var jqw = $(window).width(),
-	    jsw = document.documentElement.clientWidth;
-	    console.log("jqw:"+jqw);
-	    console.log("jsw:"+jsw);
-	}
-	$(window).resize(windowSize);
 });
