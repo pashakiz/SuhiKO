@@ -262,6 +262,33 @@
 		display: none;
 	}
 	/* -------------------------- category (end) -------------------------- */
+	/* -------------------------- contacts (begin) -------------------------- */
+	.contacts__info-map {
+		padding-bottom: 0;
+	}
+	.contacts__info {
+		float: left;
+		width: 463px;
+	}
+	.contacts__map {
+		position: static;
+		float: right;
+		width: 517px;
+		height: 529px;
+	}
+	.contacts__info__item {
+		float: left;
+	}
+	.contacts__info__item.right {
+		float: right;
+		width: 150px;
+		margin-right: 10px;
+	}
+	#contacts_feedback input,
+	#contacts_feedback textarea {
+		width: 395px;
+	}
+	/* -------------------------- contacts (end) -------------------------- */
 	.footer-row1 {
 		height: 45px;
 	}
