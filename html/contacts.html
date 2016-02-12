@@ -81,11 +81,11 @@
 						<div class="contacts__info__item__title">Обратная связь:</div>
 						<div class="contacts__info__item__value">
 							<form id="contacts_feedback" action="" method="post">
-								<input class="placeholder" type="text" name="name" value="Ваше имя">
-								<input class="placeholder" type="text" name="email" value="Email">
-								<input class="placeholder" type="text" name="phone" value="Телефон">
-								<textarea class="placeholder" name="message">Сообщение</textarea>
-								<button class="contacts_feedback-btn" type="submit">Отправить</button>
+								<input type="text" name="name" placeholder="Ваше имя">
+								<input type="text" name="email" placeholder="Email" required>
+								<input type="text" name="phone" placeholder="Телефон">
+								<textarea name="message" placeholder="Сообщение"></textarea>
+								<button type="submit">Отправить</button>
 							</form>
 						</div>
 					</div>
@@ -135,6 +135,7 @@
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/jquery.smoothscroll.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.textPlaceholder.js"></script>
 	<script src="js/common.js"></script>
 	<!-- not use (можно удалить и сами файлы из проекта)
 	<script src="js/jquery.mousewheel.min.js"></script>

@@ -1,43 +1,13 @@
 $(document).ready(function() {
 
-	/* Placeholder
-		Пример вызова:
-		placeholder(".feedback__name");
-		placeholder(".feedback__email");
-		в html необходимо указать атрибут value
-		<input class="feedback__name" type="text" name="name" value="Имя Фамилия">
-		<input class="feedback__email" type="text" name="email" value="E-mail">
-	*/
-	function placeholder(selector) {
-		var title = "";
-		title = $(selector).val();
-		if (title == "") {
-			return false;
-		}
-		$(selector).on("focus", function() {
-			if( $(this).val() == title || $(this).val() == "" ) {
-				$(this).val("");
-			}
-		});
-		$(selector).on("blur", function() {
-			if( $(this).val() == "" ) {
-				$(this).val(title);
-			}
-		});
-	}
-	
-	//Попап менеджер FancyBox
-	//Документация: http://fancyapps.com/fancybox/
-	//<a class="fancybox" rel="group" href="big_image_1.jpg"><img src="small_image_1.jpg" alt="" /></a>
-	//<a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>
-	// $(".fancybox").fancybox();
-
-	//Каруселька
+	//Каруселька на главной
 	//Документация: http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html
 	$(".carousel").owlCarousel({
 		items : 1,
 		autoPlay : true
 	});
+
+	//Каруселька ингредиентов
 	$(".product__info__ingredients").owlCarousel({
 		items : 6,
 		nav : true,
@@ -64,11 +34,11 @@ $(document).ready(function() {
 	
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function() {
+	$("form#contacts_feedback").submit(function() {
 		$.ajax({
 			type: "POST",
 			url: "mail.php",
-			data: $("form").serialize(),
+			data: $("form#contacts_feedback").serialize(),
 			success: function(data) {
 				//$('#order_status').html(data);
 				$('#order_status').html('Спасибо, Ваша заявка отправлена!');
@@ -78,9 +48,6 @@ $(document).ready(function() {
 			}
 		}).done(function() {
 			alert("Спасибо за заявку!");
-			setTimeout(function() {
-				$.fancybox.close();
-			}, 1000);
 		});
 		return false;
 	});
@@ -116,4 +83,14 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+	//Placeholder.js Doc: https://github.com/NV/placeholder.js/
+	$("[placeholder]").textPlaceholder();
+
+	//Попап менеджер FancyBox
+	//Документация: http://fancyapps.com/fancybox/
+	//<a class="fancybox" rel="group" href="big_image_1.jpg"><img src="small_image_1.jpg" alt="" /></a>
+	//<a class="fancybox" rel="group" href="big_image_2.jpg"><img src="small_image_2.jpg" alt="" /></a>
+	// $(".fancybox").fancybox();
+
 });
