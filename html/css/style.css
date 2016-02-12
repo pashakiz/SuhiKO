@@ -186,15 +186,17 @@ header.fixed_menu .panel {
 }
 header.fixed_menu .panel .info .phone {
 	display: block;
+	margin-right: 0;
 }
 header.fixed_menu .panel .info .phone .icon-phone {
 	display: none;
 }
 header.fixed_menu .panel .info .phone .phone-numbers {
 	padding-left: 0;
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 16px;
 	padding-top: 5px;
+	width: 175px;
 }
 header.fixed_menu .btn-mobile-menu {
 	margin: 10px 0;
