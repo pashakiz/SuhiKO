@@ -168,7 +168,41 @@ header .panel .header-nav > li:hover > a {
 	color: #ed1c24;
 	border-color: #ed1c24;
 }
-
+.fixed_menu_fix {
+	margin-top: 44px;
+}
+.fixed_menu {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 500;
+	padding-top: 0;
+}
+header.fixed_menu .logo {
+	display: none;
+}
+header.fixed_menu .panel {
+	float: none;
+}
+header.fixed_menu .panel .info .phone {
+	display: block;
+}
+header.fixed_menu .panel .info .phone .icon-phone {
+	display: none;
+}
+header.fixed_menu .panel .info .phone .phone-numbers {
+	padding-left: 0;
+	font-size: 12px;
+	line-height: 16px;
+	padding-top: 5px;
+}
+header.fixed_menu .btn-mobile-menu {
+	margin: 10px 0;
+}
+header.fixed_menu .panel .info .basket {
+	margin-top: 0;
+	padding: 10px 14px 8px 9px;
+}
 /* -------------------------- index (begin) -------------------------- */
 .carousel {
 	position: relative;

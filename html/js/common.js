@@ -142,4 +142,28 @@ $(document).ready(function() {
 		var n = $(".add2bascket-qty-input").val();
 		$(".add2bascket-qty-input").val(--n);
 	});
+
+	//fixed блок filters-wrapper on scroll
+	$(window).scroll(function () {
+		console.log($(this).scrollTop());
+		if ($(this).scrollTop() > 60) {
+			if ($(window).width() < 1200) {
+				$(".header").addClass("fixed_menu");
+				$("body").addClass("fixed_menu_fix");
+			}
+		} else {
+			if ($(window).width() < 1200) {
+				$(".header").removeClass("fixed_menu");
+				$("body").removeClass("fixed_menu_fix");
+			}
+		}
+	});
+
+	function windowSize(){
+	    var jqw = $(window).width(),
+	    jsw = document.documentElement.clientWidth;
+	    console.log("jqw:"+jqw);
+	    console.log("jsw:"+jsw);
+	}
+	$(window).resize(windowSize);
 });
